@@ -12,32 +12,34 @@
         <div class="col-lg">
           <h4>Faça seu cadastro</h4>
           <p>Se você não tem uma conta, crie uma:</p>
-          <form class="form-cadastro" action="/login/register" method="POST"></form>
-            <input type="hidden" name="_csrf" value=<%= csrfToken %>>
+          <form class="form-cadastro" action="/login/register" method="POST">
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
             <div class="form-group">
               <label>Seu e-mail</label>
-              <input type="email" class="form-control" name="email">
+              <input type="email" class="form-control" name="email" />
             </div>
             <div class="form-group">
               <label>Sua senha</label>
-              <input type="password" class="form-control" name="password">
+              <input type="password" class="form-control" name="password" />
             </div>
-            <button type="submit" class="btn btn-primary">Criar minha conta</button>
+            <button type="submit" class="btn btn-primary">
+              Criar minha conta
+            </button>
           </form>
         </div>
 
         <div class="col-lg">
           <h4>Faça seu login</h4>
           <p>Se você já tem uma conta, faça login abaixo:</p>
-          <form class="form-cadastro" action="/login/login" method="POST"></form>
-            <input type="hidden" name="_csrf" value=<%= csrfToken %>>
+          <form class="form-cadastro" action="/login/login" method="POST">
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
             <div class="form-group">
               <label>Seu e-mail</label>
-              <input type="email" class="form-control" name="email">
+              <input type="email" class="form-control" name="email" />
             </div>
             <div class="form-group">
               <label>Sua senha</label>
-              <input type="password" class="form-control" name="password">
+              <input type="password" class="form-control" name="password" />
             </div>
             <button type="submit" class="btn btn-primary">Entrar</button>
           </form>
@@ -48,4 +50,4 @@
     <div class="col-lg-2"></div>
   </div>
 </div>
-  <%- include('includes/footer');%>
+<%- include('includes/footer');%>
