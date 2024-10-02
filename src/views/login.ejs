@@ -9,7 +9,7 @@
       <p class="text-center lead">Faça login ou crie sua conta abaixo.</p>
       <%- include('includes/messages');%>
       <div class="row">
-        <div class="col-lg">
+        <div class="col-lg my-5">
           <h4>Faça seu cadastro</h4>
           <p>Se você não tem uma conta, crie uma:</p>
           <form class="form-cadastro" action="/login/register" method="POST">
@@ -28,10 +28,10 @@
           </form>
         </div>
 
-        <div class="col-lg">
+        <div class="col-lg my-5">
           <h4>Faça seu login</h4>
           <p>Se você já tem uma conta, faça login abaixo:</p>
-          <form class="form-cadastro" action="/login/login" method="POST">
+          <form class="form-login" action="/login/login" method="POST">
             <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
             <div class="form-group">
               <label>Seu e-mail</label>
